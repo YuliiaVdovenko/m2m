@@ -1,0 +1,225 @@
+//------------------ Header -----------------
+.main-scroll {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.top-header {
+	background-color: $back-color;
+}
+
+//----------------Mobile Phones and Email Links ----------------------
+
+.header-link:link, .header-link:visited,.header-email-link:link, .header-email-link:visited {
+	font-size: 0.8rem;
+	color: $white-color;
+	font-weight: 600;
+	@media (min-width: 576px) {
+		font-size: 1rem;
+		color: $white-color;
+	}
+}
+.header-email-link:link, .header-email-link:visited {
+	font-weight: 400;
+}
+.header-link:hover, .header-email-link:hover {
+	color: $main-color;
+}
+
+
+//-------------Text in header ---------------
+.header-text {
+	p {
+		color: $white-color;
+		font-weight: 300;
+	}
+}
+
+.top-header-i {
+	font-size: 1.2rem;
+	margin-right: 0.3rem;
+	color: $white-color;
+}
+
+
+//---------------Link to the part of content ---------------
+.header-nav-link:link, .header-nav-link:visited {
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $black-color;
+	padding: 0.5rem 1rem;
+	@media (min-width: 768px) {
+		font-size: 1.1rem;
+	}
+}
+
+.header-nav-link:hover {
+	color: $main-color;
+}
+
+.nav-link-button {
+	background-color: $main-color;
+	i {
+		color: $white-color;
+	}
+}
+
+.shadow-border {
+	width: 100%;
+	background-color: $white-color;
+	-moz-box-shadow: 0 5px 2px -2px gray;
+	-webkit-box-shadow: 0 5px 2px -2px gray;
+	box-shadow: 0 5px 2px -2px gray;
+}
+
+//-----------------PopUp style-----------------
+.popup {
+	background-color: transparent;
+	top: 25%;
+}
+
+.close_popup {
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	font-size: 2rem;
+	color: $main-color;
+}
+
+.a-opacity {
+	opacity: 1;
+}
+
+//------------Fixed header -------------------
+.fixed-header {
+	display: none;
+	@media (min-width: 768px) {
+		display: inherit;
+		position: fixed;
+		width: 100%;
+		z-index: 2000;
+	}
+}
+.fixed-header-mobile {
+	position: fixed;
+	width: 100%;
+	z-index: 2000;
+	-moz-box-shadow: 0 5px 2px -2px gray;
+	-webkit-box-shadow: 0 5px 2px -2px gray;
+	box-shadow: 0 5px 2px -2px gray;
+	@media (min-width: 768px) {
+		display: none;
+	}
+}
+// ---------- CallBack Form ----------------
+
+.wpcf7 {
+	text-align: center;
+	max-width: 100%;
+}
+
+.wpcf7-form {
+	width: 80%;
+	margin: auto;
+	@media (min-width: 1200px) {
+		width: 70%;
+	}
+	input[type=text], input[type=email], input[type=tel], textarea {
+		font-weight: 300;
+		font-style: italic;
+		font-size: 0.9rem;
+		border: 2px solid lightgrey;
+		border-radius: 0.5rem;
+		text-align: center;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+		&:focus {
+			border-color: $main-color;
+			box-shadow: none;
+		}
+	}
+	textarea {
+		height: 4rem !important;
+	}
+	p {
+		display: inline-block;
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+	input[type="submit"] {
+		font-weight: 700;
+		color: $white-color;
+		background-color: $main-color;
+		transition: none;
+		box-shadow: none;
+		border-radius: 0.5rem;
+		line-height: 2rem;
+		border: none;
+	}
+	input[type="submit"]:hover {
+		color: $white-color;
+		background-color: $green-color;
+	}
+	input[type="submit"]:focus {
+		color: $white-color;
+		background-color: $main-color;
+		border: none;
+		background-image: none;
+		transition: none;
+		box-shadow: none;
+	}
+
+	input[type="submit"]:active {
+		color: $white-color !important;
+		background-color: $green-color !important;
+		background-image: unset !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+}
+
+.contact-form {
+	padding-top: 2rem;
+}
+
+.form-caption {
+	text-align: center;
+	font-size: 1.2rem;
+	padding: 2rem 1rem 2rem 1rem;
+	@media (min-width: 556px) {
+		font-size: 1.3rem;
+		padding: 3rem 2rem 2rem 2rem;
+	}
+	@media (min-width: 768px) {
+		font-size: 1.1rem;
+		padding: 2rem 1rem 1rem 1rem;
+	}
+	@media (min-width: 992px) {
+		font-size: 1.2rem;
+		padding: 2rem 1rem 1rem 1rem;
+	}
+	@media (min-width: 1200px) {
+		font-size: 1.3rem;
+		padding: 3rem 2rem 2rem 2rem;
+	}
+	span {
+		font-weight: 600;
+		color: $main-color;
+		font-size: 1.2rem;
+		@media (min-width: 556px) {
+		font-size: 1.3rem;
+	}
+	@media (min-width: 768px) {
+		font-size: 1.1rem;
+	}
+	@media (min-width: 992px) {
+		font-size: 1.2rem;
+	}
+	@media (min-width: 1200px) {
+		font-size: 1.3rem;
+	}
+	}
+}
+

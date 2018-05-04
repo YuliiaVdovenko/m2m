@@ -1,0 +1,23 @@
+//--------------- Thanks Page ----------------
+
+.width {
+	width: 100%;
+	@media (min-width: 768px) {
+		width: 80%;
+	}
+	@media (min-width: 992px) {
+		width: 50%;
+	}
+}
+.special-message {
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 2rem
+}
+.back-button {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid $main-color;
+	border-radius: 0.5rem;
+}

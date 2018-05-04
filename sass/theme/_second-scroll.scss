@@ -1,0 +1,56 @@
+//--------------Second section-----------------
+.back-section {
+	background-color: $back-color;
+}
+
+.section-title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: $black-color;
+	text-transform: uppercase;
+	line-height: 1.7rem;
+	@media (min-width: 576px) {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+	span {
+		font-weight: 700;
+		font-size: 1.5rem;
+		color: $main-color;
+		text-transform: uppercase;
+		line-height: 1.7rem;
+		@media (min-width: 576px) {
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+		@media (min-width: 993px) {
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+	}
+}
+
+
+.why-title {
+		color: $white-color;
+		text-transform: none;
+		span {
+			text-transform: none;
+		}
+}
+
+.list-item{
+	flex-flow: column;
+	justify-content: baseline;
+	img {
+		width: 10rem;
+	}
+	.second-section-image {
+		width: 7rem;
+	}
+	.image-description {
+		color: $white-color;
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	}
+}

@@ -1,0 +1,94 @@
+//------------------Footer style -------------------
+
+.footer-section {
+	.section-title:after {
+		content: ':';
+		color: $white-color;
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 1.7rem;
+		@media (min-width: 576px) {
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+	}
+	iframe {
+		width: 100%;
+	}
+}
+.tel-info-item:link, .teltel-info-item:visited {
+	color: $white-color;
+	line-height: 2rem;
+	font-size: 1.2rem;
+	@media (min-width: 768px){
+		line-height: 3rem;
+	}
+}
+.tel-info-item:hover {
+	color: $main-color;
+}
+.tel-info-i {
+	color: $white-color;
+	background-color: $green-color;
+	padding: 0.4rem 0.5rem;
+	border-radius: 50%;
+	margin-right: 1.5rem;
+	display: inline-block;
+}
+.email-link:link, .email-link:visited {
+	font-size: 1.2rem;
+	font-weight: bold;
+	line-height: 3rem;
+	color: $blue-color;
+}
+.email-info-i {
+	color: $main-color;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	margin-right: 1.5rem;
+	display: inline-block;
+}
+.address-label {
+	color: $white-color;
+	line-height: 3rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.address, .flor, .company {
+	@extend .address-label;
+	font-weight: normal;
+	display: inline-block;
+}
+.arrow-before {
+	@extend .email-info-i;
+	font-size: 2rem;
+}
+
+//--------- Bottom Footer ----------------
+.footer-second {
+	background-color: $black-color;
+}
+.bottom-footer-link:link, .bottom-footer-link:visited {
+	@extend .tel-info-item;
+	font-size: 1rem;
+	font-weight: 600;
+}
+.footer-email-link:link, .footer-email-link:visited {
+	@extend .tel-info-item;
+	font-size: 1rem;
+	font-weight: 400;
+}
+.bottom-footer-link:hover {
+	color: $main-color;
+}
+.bottom-footer-i {
+	font-size: 1rem;
+	margin-right: 0.3rem;
+	color: $white-color;
+}
+.opacity {
+	opacity: 0.6;
+}
+.call-back {
+	font-size: 1rem;
+}

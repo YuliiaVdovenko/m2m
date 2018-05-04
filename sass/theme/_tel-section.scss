@@ -1,0 +1,31 @@
+//--------------- Section about consultation ----------------
+
+.form {
+	background-color: $white-color;
+	border-radius: 1rem;
+	-webkit-box-shadow: 0px -3px 15px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px -3px 15px 4px rgba(0,0,0,0.2);
+	box-shadow: 0px -3px 15px 4px rgba(0,0,0,0.2);
+		.cons {
+		align-items: center;
+		.ajax-loader {
+			display: none;
+		}
+	}
+	.wpcf7-form {
+		width: 80%;
+		input[type="submit"]{
+			height: 3.5rem;
+			padding: 0 1rem;
+		}
+	}
+}
+
+.information {
+	font-weight: 300;
+	font-style: italic;
+	color: $black-color;
+	font-size: 0.8rem;
+	line-height: 1rem;
+	opacity: 0.4;
+}
